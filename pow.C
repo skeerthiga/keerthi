@@ -1,16 +1,16 @@
 #include <stdio.h>
 int main()
 {
-int base, exponent;
+int base, exp;
 long long result = 1;
-printf("Enter a base number: ");
+printf("Enter a base number");
 scanf("%d", &base);
-printf("Enter an exponent: ");
-scanf("%d", &exponent);
-while (exponent != 0)
+printf("Enter an exp");
+scanf("%d", &expo);
+while (exp!= 0)
 {
-result *= base;
---exponent;
+result*= base;
+--exp;
 }
 printf("Answer = %lld", result);
 return 0;
