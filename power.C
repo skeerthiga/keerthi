@@ -8,7 +8,7 @@ printf("Enter a base number: ");
 scanf("%lf", &base);
 printf("Enter an exponent: ");
 scanf("%lf", &exponent);
-result = pow(base, exponent);
+res=pow(base, exponent);
 printf("%.1lf^%.1lf = %.2lf", base, exponent, res);
 return 0;
 }
