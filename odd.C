@@ -1,14 +1,14 @@
+ 
 #include <stdio.h>
-
-void main()
+int main()
 {
-int number,j=20,k=40;
-clrscr();
-printf("Print Odd Numbers in a given range m to n:\n");
-for (number=j;number<=k;number++)
+int i, n, sum=0;
+printf("Enter upper limit: ");
+scanf("%d", &n);
+for(i=1; i<=n; i+=2)
 {
-if (number%2==1)
-printf("%d",number);
+sum += i;
 }
-getch();
+printf("Sum of odd numbers = %d", sum);
+return 0;
 } 
