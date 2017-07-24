@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {
-int j,k,sum=0;
-printf("Enter upper limit: ");
-scanf("%d",&k);
-for(i=1; i<=k; i+=2)
+int i, n;
+printf("Print odd numbers till: ");
+scanf("%d", &n);
+printf("All odd numbers from 1 to %d are: \n", n);
+for(i=1; i<=n; i+=2)
 {
-sum+=i;
+printf("%d\n", i);
 }
-printf("Sum of odd numbers = %d",sum);
 return 0;
-}
+} 
