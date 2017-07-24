@@ -1,23 +1,23 @@
 #include <stdio.h>
 int main()
 {
-int n1, n2, i, temp, num, rem;
+int n1,n2,l,p,num,rem;
 printf("Enter two numbers(intervals): ");
 scanf("%d %d", &n1, &n2);
-printf("Armstrong numbers between %d an %d are: ", n1, n2);
-for(i=n1+1; i<n2; ++i)
+printf("Armstrong numbers between %d an %d are",n1,n2);
+for(l=n1+1;l<n2;++l)
 {
-temp=i;
+p=l;
 num=0;
-while(temp!=0)
+while(p!=0)
 {
-rem=(temp%10);
+rem=(p%10);
 num+=rem*rem*rem;
-temp/=10;
+p/=10;
 }
-if(i==num)
+if(l==num)
 {
-printf("%d ",i);
+printf("%d ",l);
 }
 }
 return 0;
