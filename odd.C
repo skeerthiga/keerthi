@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {
-int i, n;
+int j,k;
 printf("Print odd numbers till: ");
-scanf("%d", &n);
-printf("All odd numbers from 1 to %d are: \n", n);
-for(i=1; i<=n; i+=2)
+scanf("%d", &k);
+printf("All odd numbers from 1 to %d are: \n", k);
+for(i=1; i<=k; i+=2)
 {
-printf("%d\n", i);
+printf("%d\n",j);
 }
 return 0;
 } 
