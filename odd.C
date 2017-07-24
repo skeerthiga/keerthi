@@ -1,22 +1,14 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+
+void main()
 {
-int n,num,num2,k,remark;
-printf("\n Enter any two Numbers : ");
-scanf("%d %d",&num1,&num2);
-printf("\n\n The Prime Numbers between the given Two Intervals are . . . \n ");
-for(n=num1;n<=num2;++n)
+int number,j=20,k=40;
+clrscr();
+printf("Print Odd Numbers in a given range m to n:\n");
+for (number=j;number<=k;number++)
 {
-remark=0;
-for(k=2;k<=n/2;k++){
-if((n % k) == 0){
-remark++;
-break;
-}
-}
-if(remark==0)
-printf("\n %d ", n);
+if (number%2==1)
+printf("%d",number);
 }
 getch();
-return 0;
-}
+} 
